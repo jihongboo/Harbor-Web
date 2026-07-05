@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Harbor - Your Apple Ecosystem Home Download & Media Server</title>
+  <meta name="description" content="Harbor turns your Mac into a home download & media center, allowing iPhone, iPad, Apple TV, and Vision Pro to access, play, and manage content anytime. Powered by Aria2, designed for Apple ecosystem.">
+  <meta name="keywords" content="Harbor, Aria2, Mac Downloader, Media Center, Remote Control, Apple TV Player, Spatial Cinema, iOS Download">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/mac-harbor.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. Navigation Bar
+       ========================================== -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#" class="logo">
+        <img src="assets/images/mac-harbor.png" alt="Harbor Logo">
+        <span>Harbor</span>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#ecosystem" class="nav-link">Ecosystem</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#roadmap" class="nav-link">Roadmap</a>
+      </nav>
+      
+      <div class="nav-cta">
+        <a href="#download" class="btn btn-primary">Download</a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       2. Hero Section
+       ========================================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tag">
+        <span></span> Harbor v1.0.0 for macOS is now available
+      </div>
+      <h1 class="hero-title">
+        Download Once.<br><span>Enjoy Everywhere.</span>
+      </h1>
+      <p class="hero-desc">
+        Harbor turns your Mac into a home download & media center, allowing iPhone, iPad, Apple TV, and Vision Pro to access, play, and manage content anytime.
+      </p>
+      
+      <div class="hero-actions" id="download">
+        <a href="#" class="btn btn-primary">Download for Mac</a>
+      </div>
+      
+      <div class="hero-platforms">
+        <span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.22.67-2.94 1.51-.63.73-1.18 1.87-1.03 2.99 1.12.09 2.27-.58 2.98-1.44z"/></svg>
+          macOS
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+          iOS / iPadOS
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+          tvOS (Apple TV)
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          visionOS
+        </span>
+      </div>
+      
+      <div class="hero-image-wrapper reveal">
+        <img src="assets/images/mac-harbor.png" alt="Harbor for Mac Interface Screenshot">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. Core Features (Bento Grid Section)
+       ========================================== -->
+  <section id="features" class="container reveal">
+    <div class="section-header">
+      <span class="section-tag">Core Features</span>
+      <h2 class="section-title">More Than Just a Downloader</h2>
+      <p class="section-subtitle">Harbor integrates downloading, file organization, local sharing, and cross-device playback into a single seamless workflow.</p>
+    </div>
+    
+    <div class="bento-grid">
+      <!-- Box 1 (Aria2 Engine) -->
+      <div class="bento-card span-2">
+        <div class="bento-content">
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          </div>
+          <h3>Aria2 Download Engine</h3>
+          <p>Powered by Aria2, supporting multi-threaded downloading, auto-resume, and global speed limits. Easily handle large files and massive tasks to unleash your full bandwidth.</p>
+          <div class="protocol-tags">
+            <span class="protocol-tag">Magnet</span>
+            <span class="protocol-tag">Torrent</span>
+            <span class="protocol-tag">HTTP/HTTPS</span>
+            <span class="protocol-tag">FTP/SFTP</span>
+            <span class="protocol-tag">Metalink</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Box 2 (Auto Extraction) -->
+      <div class="bento-card">
+        <div class="bento-card-header">
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>Auto Extraction</h3>
+          <p>Supports zip, rar, 7z, tar, gz, and other mainstream formats. Decompress files automatically upon download completion without manual intervention.</p>
+        </div>
+      </div>
+      
+      <!-- Box 3 (Smart Categorization) -->
+      <div class="bento-card">
+        <div class="bento-card-header">
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Smart Categorization</h3>
+          <p>Built-in automation rules engine. Automatically organize movies, TV shows, music, AI models (like safetensors), and documents based on file extensions.</p>
+        </div>
+      </div>
+      
+      <!-- Box 4 (Native Playback) -->
+      <div class="bento-card span-2">
+        <div class="bento-content">
+          <div class="bento-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3>Native Media Player & Streaming</h3>
+          <p>Built-in high-performance player supporting MP4, MKV, MOV, and other popular formats. Offers 4K HDR, Dolby Vision, external subtitles, and AirPlay streaming to the big screen.</p>
+        </div>
+        <div class="bento-illustration">
+          <img src="assets/images/mac-native.png" alt="Native By Design Media Playback">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. Ecosystem Section
+       ========================================== -->
+  <section id="ecosystem" class="ecosystem reveal">
+    <div class="container ecosystem-container">
+      <div class="ecosystem-info">
+        <span class="section-tag">Ecosystem Integration</span>
+        <h2 class="section-title">Apple Ecosystem Home Server</h2>
+        <p class="section-subtitle">
+          Harbor automatically discovers devices in your local network using Bonjour. With Tailscale and ZeroTier remote access, you can securely access your server anytime without a public IP.
+        </p>
+        
+        <div class="device-tabs">
+          <button class="device-tab active" data-device="mac">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Mac · Home Server
+            </h4>
+            <p>Acts as your central home server. Manages downloads, file organization, media library indexing, and provides WebSocket APIs and push notifications.</p>
+          </button>
+          
+          <button class="device-tab" data-device="iphone">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              iPhone & iPad · Remote Controller
+            </h4>
+            <p>Your remote control in your pocket. Add tasks, check progress, browse your library, and play videos. Supports iOS push notifications.</p>
+          </button>
+          
+          <button class="device-tab" data-device="tv">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Apple TV · TV Player
+            </h4>
+            <p>Designed for the living room. Browse rich movie poster walls and enjoy 4K, HDR 10, and Dolby Vision on the big screen with Siri Remote.</p>
+          </button>
+          
+          <button class="device-tab" data-device="vision">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              Vision Pro · Spatial Movie Theater
+            </h4>
+            <p>Step into the future. Stream videos onto a massive virtual screen in 3D physical space, perfectly paired with Spatial Audio.</p>
+          </button>
+        </div>
+      </div>
+      
+      <div class="ecosystem-image">
+        <img src="assets/images/mac-harbor.png" alt="Ecosystem Device Screen">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. Gallery Section
+       ========================================== -->
+  <section id="gallery" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">Interface Gallery</span>
+      <h2 class="section-title">Meticulously Crafted Native Interface</h2>
+      <p class="section-subtitle">Every interface is built natively with SwiftUI. Silky smooth, with none of the lag associated with web-wrapper apps.</p>
+    </div>
+    
+    <div class="gallery-container">
+      <div class="gallery-slider">
+        <div class="gallery-slide">
+          <img src="assets/images/screenshot-home.png" alt="Harbor Home Screen">
+          <div class="gallery-caption">Home: Manage active and completed download tasks with ease.</div>
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/images/screenshot-detail.png" alt="Harbor Task Details Screen">
+          <div class="gallery-caption">Details: View file structures, multi-threaded connections, and speeds.</div>
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/images/mac-native.png" alt="Native By Design Interface">
+          <div class="gallery-caption">Native Design: Elegant media controls seamlessly integrated with the system.</div>
+        </div>
+      </div>
+      
+      <div class="gallery-nav">
+        <button class="gallery-arrow prev" aria-label="Previous Slide">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <div class="gallery-dots"></div>
+        <button class="gallery-arrow next" aria-label="Next Slide">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. Roadmap Section
+       ========================================== -->
+  <section id="roadmap" class="reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Product Roadmap</span>
+        <h2 class="section-title">An Evolving Home Media Server</h2>
+        <p class="section-subtitle">We are committed to building the ultimate seamless download and media loop for the Apple ecosystem.</p>
+      </div>
+      
+      <div class="roadmap-timeline">
+        <div class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-tag">v1.0.0 (Current Version)</span>
+          <h3 class="roadmap-title">Mac Server Foundation</h3>
+          <ul class="roadmap-list">
+            <li>SwiftUI native design & Aria2 multi-threaded downloading</li>
+            <li>Bonjour-based instant local pairing</li>
+            <li>iPhone client for progress tracking & push notifications</li>
+          </ul>
+        </div>
+        
+        <div class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-tag">v1.5.0 (In Development)</span>
+          <h3 class="roadmap-title">Streaming & Deep Controls</h3>
+          <ul class="roadmap-list">
+            <li>Direct media streaming & AirPlay playback on iOS/iPadOS</li>
+            <li>Finder-level file management (rename, move, browse) on mobile</li>
+            <li>Built-in rules engine and extraction service launch</li>
+          </ul>
+        </div>
+        
+        <div class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-tag">v2.0.0 (In Development)</span>
+          <h3 class="roadmap-title">Living Room Cinema</h3>
+          <ul class="roadmap-list">
+            <li>Independent native Apple TV client release</li>
+            <li>Auto-scraping for movie & TV show poster walls</li>
+            <li>Cross-device "Resume Watching" progress sync</li>
+          </ul>
+        </div>
+        
+        <div class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-tag">v2.5.0 (Planned)</span>
+          <h3 class="roadmap-title">Spatial Computing Integration</h3>
+          <ul class="roadmap-list">
+            <li>Vision Pro spatial cinema version release</li>
+            <li>Support for 180° / 360° immersive and 3D spatial videos</li>
+          </ul>
+        </div>
+        
+        <div class="roadmap-item">
+          <div class="roadmap-dot"></div>
+          <span class="roadmap-tag">v3.0.0 (Future Outlook)</span>
+          <h3 class="roadmap-title">All-in-one Media Hub</h3>
+          <ul class="roadmap-list">
+            <li>Lossless music library (FLAC/ALAC) and photo sharing</li>
+            <li>Document preview & local AI model categorization manager</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. Footer Section
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/images/mac-harbor.png" alt="Harbor Logo">
+        <span>Harbor</span>
+      </div>
+      
+      <div class="footer-nav">
+        <a href="#features">Features</a>
+        <a href="#ecosystem">Ecosystem</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      
+      <p class="footer-copyright">
+        &copy; 2026 Harbor App. All rights reserved.
+      </p>
+      <p class="footer-disclaimer">
+        Disclaimer: Aria2 is an open-source download tool. Please comply with local laws and regulations. Harbor does not take any legal responsibility for user downloads.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
